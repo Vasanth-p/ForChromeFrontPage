@@ -1,0 +1,209 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* navbar */
+.navbar {
+
+    background: transparent;
+    position: sticky;
+    top: 0;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.fa-bars {
+    color: #686868;
+}
+
+.nav-item a {
+    font-weight: 600;
+    padding: 0px 15px !important;
+    color: inherit !important;
+    font-size: 13px !important;
+    float: right;
+}
+
+
+.nav-item a:hover {
+    color: #48B14D !important;
+
+    border-radius: 25px;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 996px) {
+    .nav-item a {
+        padding: 7px !important;
+    }
+
+    .img-about {
+        width: 100% !important;
+        height: auto;
+       
+    }
+
+    .navbar {
+        backdrop-filter: blur(3px);
+    }
+
+    .theme {
+        margin-top: 2.5%;
+    }
+
+    .fa-moon {
+        color: #808080 !important;
+
+    }
+
+    .gallery::-webkit-scrollbar {
+        height: 5px !important;
+    }
+
+    .horizontal-gallery {
+        margin-top: 4% !important;
+    }
+
+}
+
+
+.navbar-brand {
+    font-size: 22px !important;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: inherit !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.start {
+    padding-top: 5rem; /* or adjust to your liking */
+}
+
+/* intro  */
+.intro {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1506452305024-9d3f02d1c9b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    z-index: -1;
+    background-position: bottom;
+
+}
+
+
+.header-img {
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+.fa-angle-down {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    animation: slide 0.9s ease-in-out infinite;
+}
+
+
+@keyframes slide {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0px, 10px);
+    }
+}
+
+
+.fa-brands {
+    transition: 0.4s;
+}
+
+.fa-brands:hover {
+    color: #48B14D;
+    scale: 1.5 !important;
+}
+
+
+.img-about {
+    aspect-ratio: 1;
+    width: 75%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.hitext {
+    padding-top: 1rem !important; /* Bootstrap default */
+}
+
+
+/* asasasas */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.search-container input[type="text"] {
+    width: 200px;
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    background: rgba(255, 255, 255, 0.1);  /* Transparent default */
+    color: white;
+    font-size: 13px;
+    outline: none;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+/* ✅ Hover effect only */
+.search-container input[type="text"]:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Keep background transparent even when typing */
+.search-container input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #48B14D;
+}
+
+/* Placeholder color */
+.search-container input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-container button {
+    padding: 6px 12px;
+    background-color: #48B14D;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #3a9d3e;
+}
+
+.search-container button i {
+    font-size: 13px;
+}
